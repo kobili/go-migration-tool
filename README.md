@@ -34,3 +34,4 @@ make migrate
 ```
 make migrate-down
 ```
+- Will revert one migration at a time

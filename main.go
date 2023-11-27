@@ -50,8 +50,7 @@ func main() {
 			log.Fatal(err)
 		}
 	} else {
-		// TODO: Find a way to revert one migration at a time
-		if err := m.Down(); err != nil {
+		if err := m.Steps(-1); err != nil {
 			log.Fatal(err)
 		}
 	}
